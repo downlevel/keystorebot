@@ -13,8 +13,11 @@ def send_welcome(message):
 def store_key(message):
     key = message.text.strip()
     chat_id = message.chat.id
-    store.add_key(chat_id, key)
-    bot.reply_to(message, f"✅ Key '{key}' stored successfully!")
+    stored = store.add_key(chat_id, key)
+    if stored == 0:
+        bot.reply_to(message, f"❌ Key '{key}' already exists!")
+    else:
+        bot.reply_to(message, f"✅ Key '{key}' stored successfully!")
 
 if __name__ == "__main__":
     bot.polling()

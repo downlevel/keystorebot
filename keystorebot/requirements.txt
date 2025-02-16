@@ -1,3 +1,0 @@
-python-telegram-bot
-pynotiq-client
-python-dotenv
