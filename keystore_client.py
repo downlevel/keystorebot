@@ -51,3 +51,10 @@ class KeyStore:
                 self.queue.update_message(message["Id"], message["MessageBody"])
                 return 1
         return 0
+
+    def get_value(self, chat_id, key):
+        messages = self.queue.get_messages()
+        for message in messages:
+            if message["MessageBody"]["chat_id"] == chat_id and message["MessageBody"]["key"] == key:
+                return message["MessageBody"]["value"]
+        return None
