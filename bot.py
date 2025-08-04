@@ -1,9 +1,9 @@
 import telebot
-from config import TELEGRAM_BOT_TOKEN
+from config import config
 from keystore_client import KeyStore
 from typing import Dict
 
-bot = telebot.TeleBot(TELEGRAM_BOT_TOKEN)
+bot = telebot.TeleBot(config.TELEGRAM_BOT_TOKEN)
 store = KeyStore()
 
 # Store user states
