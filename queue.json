@@ -1,38 +1,20 @@
 [
     {
-        "chat_id": 131700073,
-        "key": "aaiddhhdb1239",
-        "id": "990854bf-8894-4fea-90ff-dcdf7ffefdbc",
-        "timestamp": "2025-02-15T13:55:05.809544"
+        "id": "8227783b-3e8d-4908-a318-56df3d72e13f",
+        "timestamp": "2025-08-05T07:55:02.619046",
+        "message_body": {
+            "chat_id": 131700073,
+            "key": "Test",
+            "value": "Jjj"
+        }
     },
     {
-        "chat_id": 131700073,
-        "key": "asdk387495",
-        "id": "0a704a24-158a-4418-bba1-82c49570ad7b",
-        "timestamp": "2025-02-15T13:59:46.310219"
-    },
-    {
-        "chat_id": 131700073,
-        "key": "aaasdasd2342",
-        "id": "f92a2053-7117-4293-ac09-91becb76b424",
-        "timestamp": "2025-02-15T14:04:10.702329"
-    },
-    {
-        "chat_id": 131700073,
-        "key": "asdasd243",
-        "id": "b0faef3a-2561-43be-9471-b85b5df32c2b",
-        "timestamp": "2025-02-15T14:07:00.311433"
-    },
-    {
-        "chat_id": 131700073,
-        "key": "adsasdas3221",
-        "id": "8b9faaf3-0704-4bb1-b807-f68f882b103f",
-        "timestamp": "2025-02-16T21:52:13.030595"
-    },
-    {
-        "chat_id": 131700073,
-        "key": "aaa",
-        "id": "61376082-7d9b-4638-9f0b-d1974e4b47a2",
-        "timestamp": "2025-02-16T21:59:06.482567"
+        "id": "0883b4e1-c47c-4b73-bff5-994ad016dfca",
+        "timestamp": "2025-08-05T07:56:01.620379",
+        "message_body": {
+            "chat_id": 131700073,
+            "key": "Xxx",
+            "value": "Richiesta"
+        }
     }
 ]

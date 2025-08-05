@@ -1,6 +1,6 @@
 # KeyStoreBot 🤖
 
-A simple yet powerful Telegram bot that allows users to securely store, edit, list, and retrieve key-value pairs associated with their Telegram chat ID. The bot uses a queue system (via `pynotiq_client`) to persist user data in a JSON file, making it easy for other applications to process or consume the stored information.
+A simple yet powerful Telegram bot that allows users to securely store, edit, list, and retrieve key-value pairs associated with their Telegram chat ID. The bot uses a queue system (via `pyqueue_client`) to persist user data in a JSON file, making it easy for other applications to process or consume the stored information.
 
 ## Features ✨
 
@@ -15,7 +15,7 @@ A simple yet powerful Telegram bot that allows users to securely store, edit, li
 ## How It Works 🔧
 
 1. Users interact with the bot via Telegram commands
-2. The bot saves key-value pairs (along with the user's chat ID) in a queue using `pynotiq_client`
+2. The bot saves key-value pairs (along with the user's chat ID) in a queue using `pyqueue_client`
 3. Data is persisted in a JSON file for reliability
 4. Other applications can process the queue for further actions
 
@@ -129,7 +129,7 @@ The bot follows a simple but effective architecture:
 
 - **Bot Layer** (`bot.py`): Handles Telegram interactions and user states
 - **Storage Layer** (`keystore_client.py`): Manages key-value operations
-- **Queue System**: Uses `pynotiq_client` for reliable data persistence
+- **Queue System**: Uses `pyqueue_client` for reliable data persistence
 - **Configuration** (`config.py`): Centralized settings management
 
 ## License 📄

@@ -1,14 +1,14 @@
 import json
 import os
-from pynotiq_client import PyNotiQ
+from pyqueue_client import PyQueue
 from config import config
 
 class KeyStore:
     def __init__(self):
-        self.queue = PyNotiQ(
-            server_url=config.PYNOTIQ_SERVER_URL,
-            queue_type=config.PYNOTIQ_QUEUE_TYPE,
-            queue_name=config.PYNOTIQ_QUEUE_NAME
+        self.queue = PyQueue(
+            server_url=config.PYQUEUE_SERVER_URL,
+            queue_type=config.PYQUEUE_QUEUE_TYPE,
+            queue_name=config.PYQUEUE_QUEUE_NAME
         )
 
     def add_key_value(self, chat_id, key, value):
